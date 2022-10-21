@@ -1,0 +1,308 @@
+/* created by Pedro da Silva Dergado
+File name: app.css
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 09/29/2022
+*/
+
+/*HOME PAGE*/
+.home h1,
+.home p {
+    text-align: center;
+}
+
+.home div {
+    float: left;
+}
+
+
+
+/*ABOUT PAGE CSS*/
+.about h1 {
+    text-align: center;
+}
+
+.about body {
+    background: #f2f3f5;
+}
+
+.card {
+    border: none;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.about .fonts {
+    font-size: 15px;
+}
+
+.about .social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.about .social-list li {
+    padding: 10px;
+    color: #8E24AA;
+    font-size: 19px;
+}
+
+
+.about .buttons button:nth-child(1) {
+    border: 1px solid #8E24AA !important;
+    color: #8E24AA;
+    height: 40px;
+}
+
+.about .buttons button:nth-child(1):hover {
+    border: 1px solid #8E24AA !important;
+    color: #fff;
+    height: 40px;
+    background-color: #8E24AA;
+}
+
+.about .buttons button:nth-child(2) {
+    border: 1px solid #8E24AA !important;
+    background-color: #8E24AA;
+    color: #fff;
+    height: 40px;
+}
+
+
+
+/* SERVICES*/
+
+.services h1,
+.services p {
+    text-align: center;
+}
+
+.services body.demos .service-widget h3 {
+    border-bottom: 1px solid #ededed;
+    font-size: 18px;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.services body.demos .service-widget {
+    margin: 0 0 30px;
+    padding: 30px;
+    background-color: #fff
+}
+
+.services .services-inner-box {
+    padding: 15px;
+    background: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .services-inner-box::before {
+    content: "";
+    position: absolute;
+    background: #faad3b;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    transition: -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
+    transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
+    transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease, -webkit-transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 0;
+}
+
+.services .services-inner-box:hover::before {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%) scale(4);
+    transform: translate(-50%, -50%) scale(4);
+    transition-duration: var(--photoboxAnimationDuration, .8s);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.services .ser-icon {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.services .ser-icon svg {
+    height: 80px;
+    width: 80px;
+}
+
+.services .services-inner-box h2 {
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.services .services-inner-box p {
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.services .services-inner-box:hover h2 {
+    color: #ffffff;
+}
+
+.services .services-inner-box:hover p {
+    color: #ffffff;
+}
+
+.services .service-widget h3 {
+    font-size: 21px;
+    color: #ffffff;
+    padding: 20px 0 12px;
+    margin: 0;
+}
+
+.services .service-widget h3 a,
+.services .section.wb .service-widget h3,
+.services .section.lb .service-widget h3 {
+    color: #1f1f1f;
+}
+
+.services .service-widget p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.services .service-widget {
+    margin-bottom: 30px;
+}
+
+.services .service-widget .post-media_pp .hover-up {
+    padding: 30px;
+    position: absolute;
+    left: 110%;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transition: all .35s ease-in-out;
+    opacity: 0;
+}
+
+.services .service-widget .post-media_pp:hover .hover-up {
+    opacity: 1;
+    left: 0;
+}
+
+.services .service-widget:hover .hoverbutton {
+    opacity: 1;
+}
+
+.services .section.lb {
+    background-color: #f2f3f5;
+}
+
+/*CONTACT FORM*/
+
+.contact h1,
+.contact p {
+    text-align: center;
+}
+
+.contact .contact_form,
+.about .container,
+.services #services,
+.project .container {
+    border: 1px solid #ededed;
+    box-shadow: 0 5px 14px rgba(123, 122, 122, 0.895);
+    background-color: transparent;
+    padding: 40px 30px;
+}
+
+.contact .contact_form .form-control {
+    background-color: #d0d1d5;
+    margin-bottom: 30px;
+    border: 1px solid #979595;
+    box-sizing: border-box;
+    color: #bcbcbc;
+    font-size: 16px;
+    outline: 0 none;
+    padding: 10px 25px;
+    height: 55px;
+    resize: none;
+    box-shadow: none !important;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.contact .contact_form textarea {
+    color: #bcbcbc;
+    padding: 20px 25px !important;
+    height: 160px !important;
+}
+
+.contact .contact_form .form-control::-webkit-input-placeholder {
+    color: #bcbcbc;
+}
+
+.contact .contact_form .form-control::-moz-placeholder {
+    opacity: 1;
+    color: #bcbcbc;
+}
+
+.contact .contact_form .form-control::-ms-input-placeholder {
+    color: #bcbcbc;
+}
+
+.contact #contact,
+.about .container,
+.about .card,
+.project .container,
+.services #services {
+    background: #f2f3f5;
+}
+
+
+.contact #contact .section-title p {
+    color: #ffffff;
+}
+
+.contact .contact_form textarea.form-control {
+    min-height: 225px;
+}
+
+.contact .form-group {
+    position: relative;
+}
+
+.contact .help-block {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+}
+
+/*PROJECT*/
+.project h1 {
+    text-align: center;
+}
