@@ -1,3 +1,9 @@
+/* created by Pedro da Silva Dergado
+File name: business.controller.server.js
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 10/21/2022
+*/
 import businessModel from '../models/businessContact.js';
 
 import { UserDisplayName } from '../utils/index.js';

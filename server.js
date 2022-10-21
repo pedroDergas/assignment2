@@ -1,3 +1,9 @@
+/* created by Pedro da Silva Dergado
+File name: server.js
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 10/21/2022
+*/
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';
@@ -50,9 +56,8 @@ function onError(error) {
     }
 }
 
-function onListening() 
-{
-  let addr = server.address();
-  let bind = 'pipe ' + addr;
-  debug('Listening on ' + bind);
+function onListening() {
+    let addr = server.address();
+    let bind = 'pipe ' + addr;
+    debug('Listening on ' + bind);
 }

@@ -1,9 +1,17 @@
-import {Router} from 'express';
-import { DisplayLoginPage, 
-    DisplayRegisterPage, 
+/* created by Pedro da Silva Dergado
+File name: auth.route.server.js
+Student’s Name: Pedro da Silva Dergado
+StudentID: 301239283
+Date: 10/21/2022
+*/
+import { Router } from 'express';
+import {
+    DisplayLoginPage,
+    DisplayRegisterPage,
     ProcessLoginPage,
     ProcessLogoutPage,
-    ProcessRegisterPage} from '../controllers/auth.controller.server.js';
+    ProcessRegisterPage
+} from '../controllers/auth.controller.server.js';
 
 const router = Router();
 
